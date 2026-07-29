@@ -27,4 +27,5 @@ jobs:
         with:
           name: synthetic-feature-store-evidence
           path: .artifacts/
+          include-hidden-files: true
           if-no-files-found: error
