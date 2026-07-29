@@ -1,0 +1,18 @@
+{
+  "name": "customer_transaction_features",
+  "version": "1.0.0",
+  "entity_key": "customer_id",
+  "event_timestamp": "event_time",
+  "availability_timestamp": "available_at",
+  "synthetic": true,
+  "features": [
+    {"name": "tx_count_24h", "type": "integer", "window_hours": 24},
+    {"name": "spend_usd_24h", "type": "number", "window_hours": 24},
+    {"name": "tx_count_7d", "type": "integer", "window_hours": 168},
+    {"name": "spend_usd_7d", "type": "number", "window_hours": 168},
+    {"name": "tx_count_30d", "type": "integer", "window_hours": 720},
+    {"name": "spend_usd_30d", "type": "number", "window_hours": 720},
+    {"name": "avg_ticket_usd_30d", "type": "number", "window_hours": 720},
+    {"name": "last_transaction_age_hours", "type": "number", "window_hours": null}
+  ]
+}

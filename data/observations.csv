@@ -1,0 +1,5 @@
+observation_id,customer_id,label_time,label
+obs-001,cus-101,2026-07-28T12:00:00Z,1
+obs-002,cus-102,2026-07-28T12:00:00Z,0
+obs-003,cus-103,2026-07-28T12:00:00Z,0
+obs-004,cus-104,2026-07-28T12:00:00Z,0
