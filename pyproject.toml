@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "point-in-time-feature-store-demo"
+version = "0.1.0"
+description = "Synthetic reference implementation for leakage-safe feature joins."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Rohit Nomula" }]
+dependencies = []
+
+[project.scripts]
+pit-feature-store = "feature_store.cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
